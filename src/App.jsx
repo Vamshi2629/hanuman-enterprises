@@ -17,7 +17,7 @@ function App() {
     });
 
     return (
-        <div className="App">
+        <div className="App overflow-x-hidden">
             <motion.div className="progress-bar" style={{ scaleX }} />
             <Navbar />
             <main>

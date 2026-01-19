@@ -25,7 +25,7 @@ const About = () => {
     ];
 
     return (
-        <section className="py-24 bg-off-white">
+        <section className="py-24 bg-off-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-20">
                     <motion.p
