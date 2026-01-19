@@ -22,7 +22,7 @@ const Home = () => {
                         <span className="w-12 h-[2px] bg-h-orange"></span>
                         <span className="text-h-orange font-bold uppercase tracking-widest text-sm">Elevating Your Interiors</span>
                     </div>
-                    <h1 className="text-5xl md:text-7xl mb-8 leading-[1.1]">
+                    <h1 className="text-4xl sm:text-4xl md:text-5xl  mb-8 leading-[1.1]">
                         <span className="text-h-navy">HANUMAN</span><br />
                         <span className="gradient-text">INTERIORS</span>
                     </h1>
