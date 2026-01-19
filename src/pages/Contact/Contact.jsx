@@ -29,15 +29,15 @@ const Contact = () => {
                             Have a project in mind? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.
                         </p>
 
-                        <div className="space-y-8">
+                        <div className="space-y-4">
                             <div className="flex gap-6 items-center p-6 bg-off-white rounded-3xl group border border-transparent hover:border-h-orange/20 transition-all">
                                 <div className="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center text-h-orange group-hover:bg-h-orange group-hover:text-white transition-all">
                                     <Phone size={28} />
                                 </div>
                                 <div>
                                     <p className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-1">Call Us Now</p>
-                                    <p className="text-h-navy font-bold text-xl">+91 75695 85026</p>
-                                    <p className="text-h-navy font-bold text-xl">+91 98489 61969</p>
+                                    <p className="text-h-navy font-bold text-lg">+91 75695 85026</p>
+                                    <p className="text-h-navy font-bold text-lg">+91 98489 61969</p>
                                 </div>
                             </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-1">Email Us</p>
-                                    <p className="text-h-navy font-bold text-xl">hanuman9687@gmail.com</p>
+                                    <p className="text-h-navy font-bold text-lg">hanuman9687@gmail.com</p>
                                 </div>
                             </div>
 
