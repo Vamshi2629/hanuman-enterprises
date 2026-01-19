@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap');
+
+@theme {
+    --color-h-orange: #E67E22;
+    --color-h-navy: #212F3D;
+    --color-h-mint: #48C9B0;
+
+    --font-outfit: "Outfit", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+:root {
+    --primary-orange: #E67E22;
+    --secondary-navy: #212F3D;
+    --accent-mint: #48C9B0;
+}
+
+body {
+    @apply font-inter text-h-navy bg-white overflow-x-hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply font-outfit font-extrabold uppercase tracking-tighter;
+}
+
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-h-orange to-[#D35400];
+}
+
+.glass {
+    @apply bg-white/85 backdrop-blur-md border-b border-white/20 shadow-lg;
+}
