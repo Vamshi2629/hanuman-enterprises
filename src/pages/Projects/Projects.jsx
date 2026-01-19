@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, PlayCircle, Image as ImageIcon } from 'lucide-react';
+import video16 from '../../assets/images/videos/16.mp4';
+import video17 from '../../assets/images/videos/17.mp4';
+import video18 from '../../assets/images/videos/18.mp4';
 
 const Projects = () => {
     const [filter, setFilter] = useState('All');
@@ -11,7 +14,9 @@ const Projects = () => {
         { type: 'Video', title: 'Landscape Walkthrough', category: 'Landscape', url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800' },
         { type: 'Image', title: 'Office Space', category: 'Interior', url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },
         { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&q=80&w=800' },
-        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=800' },
+        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video16 },
+        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video17 },
+        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video18 },
     ];
 
     const filteredItems = filter === 'All' ? gallery : gallery.filter(item => item.type === filter);
@@ -63,11 +68,22 @@ const Projects = () => {
                                 transition={{ duration: 0.4 }}
                                 className="group relative aspect-square rounded-[30px] overflow-hidden"
                             >
-                                <img
-                                    src={item.url}
-                                    alt={item.title}
-                                    className="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-transform duration-700"
-                                />
+                                {item.type === 'Video' ? (
+                                    <video
+                                        src={item.url}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                    />
+                                ) : (
+                                    <img
+                                        src={item.url}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                )}
                                 <div className="absolute inset-0 bg-h-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
                                     <div className="w-16 h-16 bg-h-orange rounded-full flex items-center justify-center mb-6">
                                         {item.type === 'Video' ? <PlayCircle size={32} /> : <ImageIcon size={32} />}

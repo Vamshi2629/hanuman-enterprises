@@ -51,20 +51,20 @@ const Footer = () => {
                     <div>
                         <h3 className="text-h-orange font-outfit font-bold text-lg mb-8 uppercase tracking-wider">Contact Us</h3>
                         <div className="space-y-6">
-                            <div className="flex gap-4 group">
-                                <Phone className="text-h-orange shrink-0 group-hover:scale-110 transition-transform" size={20} />
+                            <div className="flex items-start gap-4 group">
+                                <Phone className="text-h-orange shrink-0 group-hover:scale-110 transition-transform mt-1" size={22} />
                                 <div className="text-gray-400">
                                     <p>+91 75695 85026</p>
                                     <p>+91 98489 61969</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 group">
-                                <Mail className="text-h-orange shrink-0 group-hover:scale-110 transition-transform" size={20} />
+                            <div className="flex items-center gap-4 group">
+                                <Mail className="text-h-orange shrink-0 group-hover:scale-110 transition-transform" size={22} />
                                 <p className="text-gray-400">hanuman9687@gmail.com</p>
                             </div>
-                            <div className="flex gap-4 group">
-                                <MapPin className="text-h-orange shrink-0 group-hover:scale-110 transition-transform" size={24} />
-                                <p className="text-gray-400 italic">H.No.9-4-65, Charwadhan Street, Siddipet 502103</p>
+                            <div className="flex items-start gap-4 group">
+                                <MapPin className="text-h-orange shrink-0 group-hover:scale-110 transition-transform mt-1" size={22} />
+                                <p className="text-gray-400">H.No.9-4-65, Charwadhan Street, Siddipet 502103</p>
                             </div>
                         </div>
                     </div>
