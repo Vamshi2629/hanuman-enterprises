@@ -25,28 +25,29 @@ const Projects = () => {
 
     const gallery = [
 
-        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video16 },
-        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video17 },
-        { type: 'Video', title: 'Modern Kitchen', category: 'Interior', url: video18 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image1 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image2 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image3 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image4 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image5 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image6 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image7 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image8 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image9 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image10 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image11 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image12 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image13 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image14 },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image15 },
-
+        { type: 'Video', title: 'Interior Teaser', category: 'Residential', url: video16 },
+        { type: 'Video', title: 'Interior Teaser', category: 'Commercial', url: video17 },
+        { type: 'Video', title: 'Modern Kitchen', category: 'Kitchen', url: video18 },
+        { type: 'Image', title: 'Contemporary Living', category: 'Living', url: image1 },
+        { type: 'Image', title: 'Luxury Bedroom', category: 'Bedroom', url: image2 },
+        { type: 'Image', title: 'Bespoke Office', category: 'Office', url: image3 },
+        { type: 'Image', title: 'Modern Kitchen', category: 'Kitchen', url: image4 },
+        { type: 'Image', title: 'Cozy Living', category: 'Living', url: image5 },
+        { type: 'Image', title: 'Elite Lounge', category: 'Commercial', url: image6 },
+        { type: 'Image', title: 'Minimalist Dining', category: 'Living', url: image7 },
+        { type: 'Image', title: 'Master Bedroom', category: 'Bedroom', url: image8 },
+        { type: 'Image', title: 'Office Cabin', category: 'Office', url: image9 },
+        { type: 'Image', title: 'Kitchen Island', category: 'Kitchen', url: image10 },
+        { type: 'Image', title: 'Feature Wall', category: 'Living', url: image11 },
+        { type: 'Image', title: 'Kid\'s Room', category: 'Bedroom', url: image12 },
+        { type: 'Image', title: 'Conference Room', category: 'Office', url: image13 },
+        { type: 'Image', title: 'Balcony Decor', category: 'Residential', url: image14 },
+        { type: 'Image', title: 'Classic Living', category: 'Living', url: image15 },
     ];
 
-    const filteredItems = filter === 'All' ? gallery : gallery.filter(item => item.type === filter);
+    const interiorCategories = ['All', 'Residential', 'Commercial', 'Kitchen', 'Living', 'Bedroom', 'Office'];
+
+    const filteredItems = filter === 'All' ? gallery : gallery.filter(item => item.category === filter);
 
     return (
         <section className="py-24 bg-h-navy text-white">
@@ -68,8 +69,8 @@ const Projects = () => {
                     </motion.h2>
                 </div>
 
-                <div className="flex justify-center gap-4 mb-12">
-                    {['All', 'Image', 'Video'].map((f) => (
+                <div className="flex justify-center flex-wrap gap-4 mb-12">
+                    {interiorCategories.map((f) => (
                         <button
                             key={f}
                             onClick={() => setFilter(f)}

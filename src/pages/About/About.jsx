@@ -7,13 +7,13 @@ const About = () => {
         {
             icon: <Target size={32} />,
             title: "Our Mission",
-            desc: "To deliver exceptional architectural and interior solutions that exceed expectations through innovation and craftsmanship.",
+            desc: "To deliver exceptional interior solutions that exceed expectations through innovation and craftsmanship.",
             color: "bg-h-orange"
         },
         {
             icon: <Eye size={32} />,
             title: "Our Vision",
-            desc: "To be the leading design firm recognized for transforming landscapes and creating timeless lifestyle experiences.",
+            desc: "To be the leading interior design firm recognized for transforming spaces and creating timeless lifestyle experiences.",
             color: "bg-h-navy"
         },
         {
@@ -71,20 +71,20 @@ const About = () => {
                     >
                         <h3 className="text-3xl text-h-navy normal-case">We shape our buildings; thereafter they shape us.</h3>
                         <p className="text-gray-500 text-lg">
-                            Hanuman Enterprises has been a pioneer in the architecture and interior design industry for over 10 years. Based in Siddipet, we have successfully delivered numerous projects ranging from residential villas to commercial landscapes.
+                            Hanuman Interiors has been a pioneer in the interior design industry for over 10 years. Based in Siddipet, we have successfully delivered numerous projects ranging from residential villas to premium office interiors.
                         </p>
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
                                 <div className="w-3 h-3 bg-h-orange rounded-full"></div>
-                                <span className="font-bold text-h-navy uppercase tracking-wider">Professional Architecture</span>
+                                <span className="font-bold text-h-navy uppercase tracking-wider">Bespoke Residential Interiors</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="w-3 h-3 bg-h-mint rounded-full"></div>
-                                <span className="font-bold text-h-navy uppercase tracking-wider">Exquisite Interiors</span>
+                                <span className="font-bold text-h-navy uppercase tracking-wider">Modern Office Design</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="w-3 h-3 bg-h-navy rounded-full"></div>
-                                <span className="font-bold text-h-navy uppercase tracking-wider">Creative Landscaping</span>
+                                <span className="font-bold text-h-navy uppercase tracking-wider">Premium Space Styling</span>
                             </div>
                         </div>
                     </motion.div>

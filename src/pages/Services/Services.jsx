@@ -6,39 +6,39 @@ const Services = () => {
     const services = [
         {
             icon: <House />,
-            title: "Architecture",
-            desc: "Comprehensive architectural planning and design for residential and commercial structures.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            icon: <Paintbrush />,
-            title: "Interior Design",
-            desc: "Creating aesthetic and functional interior spaces tailored to your lifestyle and needs.",
+            title: "Residential Interior",
+            desc: "Transforming homes into elegant living spaces tailored to your comfort.",
             image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600"
         },
         {
-            icon: <TreePine />,
-            title: "Landscape Design",
-            desc: "Transforming outdoor areas into beautiful, sustainable, and serene environments.",
-            image: "https://images.unsplash.com/photo-1558905619-170891ef2a29?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            icon: <PenTool />,
-            title: "Structural Planning",
-            desc: "Precision-driven structural engineering to ensure safety and longevity of your buildings.",
-            image: "https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            icon: <Layout />,
-            title: "Urban Design",
-            desc: "Modern urban planning strategies for community-focused and efficient spaces.",
-            image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=600"
+            icon: <Paintbrush />,
+            title: "Commercial Interior",
+            desc: "Designing productive and aesthetic workspaces for modern businesses.",
+            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600"
         },
         {
             icon: <Palette />,
-            title: "Consultation",
-            desc: "Expert design consultation to bring your ideas to life with professional guidance.",
-            image: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e01a?auto=format&fit=crop&q=80&w=600"
+            title: "Furniture Layout",
+            desc: "Optimizing your space with functional and stylish furniture arrangements.",
+            image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            icon: <PenTool />,
+            title: "Moduler Kitchen",
+            desc: "State-of-the-art modular kitchen solutions with maximum efficiency.",
+            image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: <Layout />,
+            title: "Lighting Design",
+            desc: "Expert lighting consultation to set the perfect mood for your interiors.",
+            image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: <TreePine />,
+            title: "Wall Styling",
+            desc: "Creative wall treatments, wallpapers, and textures for a premium look.",
+            image: "https://images.unsplash.com/photo-1534349762230-e09ca4859e40?auto=format&fit=crop&q=80&w=800"
         }
     ];
 

@@ -16,11 +16,11 @@ const Footer = () => {
                             <img src={logo} alt="Logo" className="w-14 h-14 object-contain" />
                             <div className="flex flex-col leading-none">
                                 <span className="text-xl font-outfit font-extrabold text-h-orange">HANUMAN</span>
-                                <span className="text-xl font-outfit font-extrabold text-white">ENTERPRISES</span>
+                                <span className="text-xl font-outfit font-extrabold text-white">INTERIORS</span>
                             </div>
                         </div>
                         <p className="text-gray-400 max-w-sm">
-                            Architecture | Interior | Landscape
+                            Premium Interior Design & Bespoke Furnishing Solutions
                         </p>
                         <div className="flex gap-4">
                             {[Instagram, Facebook, Linkedin].map((Icon, idx) => (
@@ -72,7 +72,7 @@ const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 flex justify-between items-center">
                     <p className="text-gray-500 text-sm">
-                        &copy; {new Date().getFullYear()} Hanuman Enterprises. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} Hanuman Interiors. All Rights Reserved.
                     </p>
                     <button
                         onClick={scrollToTop}

@@ -20,14 +20,14 @@ const Home = () => {
                 >
                     <div className="flex items-center gap-2 mb-6">
                         <span className="w-12 h-[2px] bg-h-orange"></span>
-                        <span className="text-h-orange font-bold uppercase tracking-widest text-sm">Building Your Vision</span>
+                        <span className="text-h-orange font-bold uppercase tracking-widest text-sm">Elevating Your Interiors</span>
                     </div>
                     <h1 className="text-5xl md:text-7xl mb-8 leading-[1.1]">
                         <span className="text-h-navy">HANUMAN</span><br />
-                        <span className="gradient-text">ENTERPRISES</span>
+                        <span className="gradient-text">INTERIORS</span>
                     </h1>
                     <p className="text-xl text-gray-500 mb-10 max-w-lg font-medium">
-                        Redefining spaces through innovative Architecture, sophisticated Interiors, and breathtaking Landscapes.
+                        Redefining living spaces through innovative Interior Design, sophisticated Furnishing, and breathtaking Aesthetic solutions.
                     </p>
                     <div className="flex flex-wrap gap-6">
                         <a href="#about">

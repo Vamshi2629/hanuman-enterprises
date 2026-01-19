@@ -40,7 +40,7 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
                     <div className="flex flex-row items-center gap-2 leading-none">
                         <span className="text-lg font-outfit font-extrabold text-h-orange">HANUMAN</span>
-                        <span className="text-lg font-outfit font-extrabold text-h-navy">ENTERPRISES</span>
+                        <span className="text-lg font-outfit font-extrabold text-h-navy">INTERIORS</span>
                     </div>
                 </div>
 
