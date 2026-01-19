@@ -12,8 +12,8 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-16">
                     <div className="space-y-6">
-                        <div className="flex items-center gap-4">
-                            <img src={logo} alt="Logo" className="w-14 h-14 object-contain" />
+                        <div className="flex items-center gap-2">
+                            <img src={logo} alt="Logo" className="w-22 h-22 object-contain" />
                             <div className="flex flex-col leading-none">
                                 <span className="text-xl font-outfit font-extrabold text-h-orange">HANUMAN</span>
                                 <span className="text-xl font-outfit font-extrabold text-white">INTERIORS</span>

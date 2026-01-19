@@ -20,13 +20,13 @@ const Services = () => {
             icon: <Palette />,
             title: "Furniture Layout",
             desc: "Optimizing your space with functional and stylish furniture arrangements.",
-            image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600"
+            image: "https://media.istockphoto.com/id/1369499774/photo/designer-sketching-drawing-design-development-product-plan-draft-chair-armchair-wingback.jpg?s=612x612&w=0&k=20&c=6gXk6BjrPDsuWYYRrlMdIvPuFSH1SQ8It1lGUbQxBgM="
         },
         {
             icon: <PenTool />,
             title: "Moduler Kitchen",
             desc: "State-of-the-art modular kitchen solutions with maximum efficiency.",
-            image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+            image: "https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             icon: <Layout />,
@@ -38,7 +38,7 @@ const Services = () => {
             icon: <TreePine />,
             title: "Wall Styling",
             desc: "Creative wall treatments, wallpapers, and textures for a premium look.",
-            image: "https://images.unsplash.com/photo-1534349762230-e09ca4859e40?auto=format&fit=crop&q=80&w=800"
+            image: "https://images.unsplash.com/photo-1763690792438-c89d859b92e4?q=80&w=1211&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ];
 
@@ -96,12 +96,12 @@ const Services = () => {
                                 <p className="text-white/70 overflow-hidden h-0 group-hover:h-20 transition-all duration-500">
                                     {s.desc}
                                 </p>
-                                <motion.button
+                                {/* <motion.button
                                     whileHover={{ gap: '12px' }}
                                     className="mt-4 text-h-orange font-bold flex items-center gap-2 group-hover:opacity-100 opacity-0 transition-opacity"
                                 >
                                     Learn More <ChevronRight size={16} />
-                                </motion.button>
+                                </motion.button> */}
                             </div>
                         </motion.div>
                     ))}
