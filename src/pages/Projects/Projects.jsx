@@ -4,19 +4,46 @@ import { Search, PlayCircle, Image as ImageIcon } from 'lucide-react';
 import video16 from '../../assets/images/videos/16.mp4';
 import video17 from '../../assets/images/videos/17.mp4';
 import video18 from '../../assets/images/videos/18.mp4';
+import image1 from '../../assets/images/1.jpeg';
+import image2 from '../../assets/images/2.jpeg';
+import image3 from '../../assets/images/3.jpeg';
+import image4 from '../../assets/images/4.jpeg';
+import image5 from '../../assets/images/5.jpeg';
+import image6 from '../../assets/images/6.jpeg';
+import image7 from '../../assets/images/7.jpeg';
+import image8 from '../../assets/images/8.jpeg';
+import image9 from '../../assets/images/9.jpeg';
+import image10 from '../../assets/images/10.jpeg';
+import image11 from '../../assets/images/11.jpeg';
+import image12 from '../../assets/images/12.jpeg';
+import image13 from '../../assets/images/13.jpeg';
+import image14 from '../../assets/images/14.jpeg';
+import image15 from '../../assets/images/15.jpeg';
 
 const Projects = () => {
     const [filter, setFilter] = useState('All');
 
     const gallery = [
-        { type: 'Image', title: 'Modern Kitchen', category: 'Interior', url: 'https://images.unsplash.com/photo-1556911223-e452028e96ad?auto=format&fit=crop&q=80&w=800' },
-        { type: 'Image', title: 'Luxury Villa', category: 'Architecture', url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800' },
-        { type: 'Video', title: 'Landscape Walkthrough', category: 'Landscape', url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800' },
-        { type: 'Image', title: 'Office Space', category: 'Interior', url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },
-        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&q=80&w=800' },
+
         { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video16 },
         { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video17 },
-        { type: 'Video', title: 'Interior Teaser', category: 'Interior', url: video18 },
+        { type: 'Video', title: 'Modern Kitchen', category: 'Interior', url: video18 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image1 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image2 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image3 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image4 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image5 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image6 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image7 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image8 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image9 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image10 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image11 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image12 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image13 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image14 },
+        { type: 'Image', title: 'Contemporary Home', category: 'Architecture', url: image15 },
+
     ];
 
     const filteredItems = filter === 'All' ? gallery : gallery.filter(item => item.type === filter);
@@ -60,7 +87,7 @@ const Projects = () => {
                     <AnimatePresence mode="popLayout">
                         {filteredItems.map((item, idx) => (
                             <motion.div
-                                key={item.title}
+                                key={`${item.title}-${idx}`}
                                 layout
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}

@@ -30,24 +30,28 @@ const Home = () => {
                         Redefining spaces through innovative Architecture, sophisticated Interiors, and breathtaking Landscapes.
                     </p>
                     <div className="flex flex-wrap gap-6">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-h-navy text-white px-8 py-4 rounded-full font-bold flex items-center gap-3 shadow-xl shadow-h-navy/20"
-                        >
-                            Learn More
-                            <ChevronRight size={20} />
-                        </motion.button>
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="border-2 border-h-navy/10 text-h-navy px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-h-navy/5 transition-all"
-                        >
-                            <div className="w-8 h-8 bg-h-orange rounded-full flex items-center justify-center text-white">
-                                <Play size={16} fill="white" />
-                            </div>
-                            View Portfolio
-                        </motion.button>
+                        <a href="#about">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-h-navy text-white px-8 py-4 rounded-full font-bold flex items-center gap-3 shadow-xl shadow-h-navy/20"
+                            >
+                                Learn More
+                                <ChevronRight size={20} />
+                            </motion.button>
+                        </a>
+                        <a href="#projects">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="border-2 border-h-navy/10 text-h-navy px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-h-navy/5 transition-all"
+                            >
+                                <div className="w-8 h-8 bg-h-orange rounded-full flex items-center justify-center text-white">
+                                    <Play size={16} fill="white" />
+                                </div>
+                                View Portfolio
+                            </motion.button>
+                        </a>
                     </div>
                 </motion.div>
 
