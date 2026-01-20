@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const scriptURL="https://script.google.com/macros/s/AKfycbxpGnzCejF_vhrFWS-7rz0Z9x70qZZQ0Uclb7VIJn8KTQgv_FEZ7Kah9b67cSDaFH1z/exec";
+    const scriptURL="https://script.google.com/macros/s/AKfycbxPXVEBLtYOWVPJBtHK8fSkwvoOVP_u5CDq4VcHeotMTocCMKz5ydgouUcO4s-I0QSk/exec";
 
     try {
       await fetch(scriptURL, {
